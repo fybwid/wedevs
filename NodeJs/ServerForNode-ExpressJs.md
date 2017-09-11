@@ -17,7 +17,9 @@ mkdir myapp cd myapp npm init npm install express --save or npm install express 
 ## Create New App with Express Generator
 `express --view=pug myapp`
 
-> The view engine will be set to [Pug](https://pugjs.org/) `express --view=jade myapp`
+> The view engine will be set to [Pug](https://pugjs.org/)
+
+`express --view=jade myapp`
 
 > The view engine will be set to [Jade](http://jade-lang.com/)
 
