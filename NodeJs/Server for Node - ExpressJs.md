@@ -15,3 +15,6 @@ npm install express --no-save
 
 ## Install Express Application Generator
 `npm install express-generator -g`
+
+## Run Application
+`node app.js`
