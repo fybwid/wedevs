@@ -11,5 +11,8 @@
     "app"
   ],
   "author": "Yosef Benny Widyokarsono, S.Kom",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
