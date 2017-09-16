@@ -35,8 +35,10 @@ source: [GulpJs](https://github.com/gulpjs/gulp/blob/master/docs/getting-started
 [Google Fonts](http://www.google.com/fonts)
 
 ### Website Structure
+```
 your-website-folder
 |--- images
 |--- styles
 |--- scripts
 | index.html
+```
