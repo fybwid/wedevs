@@ -27,5 +27,5 @@ mkdir myapp cd myapp npm init npm install express --save or npm install express 
 `npm install -g nodemon`
 
 ### Start App with Nodemon
-`DEBUG=express_example:* nodemon` or `DEBUG=express_example nodemon npm start`
+`DEBUG=express_app_name:* nodemon` or `DEBUG=express_app_name nodemon npm start`
 
