@@ -1,0 +1,8 @@
+<ul>
+<% @outgoing_mails.each do |outgoing_mail| %>
+<li>
+<%= outgoing_mail.title %><br />
+<%= outgoing_mail.content %>
+</li>
+<% end %>
+</ul>
