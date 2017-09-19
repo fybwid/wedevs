@@ -11,5 +11,19 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe HomeHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "#page_title" do
+    it "returns the default title" do
+      expect(helper.page_title).to eq("Home")
+    end
+  end
+  describe "#page_content" do
+    it "returns the default content" do
+      expect(helper.page_content).to eq("Welcome to Rudi")
+    end
+  end
+  describe "#outgoing_mail_link" do
+    it "returns the outgoing mail link" do
+      expect(helper.outgoing_mail_link).to eq("Outgoing Mail")
+    end
+  end
 end
