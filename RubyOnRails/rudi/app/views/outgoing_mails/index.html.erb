@@ -1,8 +1,25 @@
-<ul>
-<% @outgoing_mails.each do |outgoing_mail| %>
-<li>
-<%= outgoing_mail.title %><br />
-<%= outgoing_mail.content %>
-</li>
+<h1>Outgoing Mails List</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Summary</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+ 
+<% @outgoing_mail.each do |outgoing_mail| %>
+  <tr>
+    <td><%= outgoing_mail.title %></td>
+    <td><%= outgoing_mail.content %></td>
+    <td><%= link_to "Show", outgoing_mail %></td>
+    <td><%= link_to "Edit", edit_outgoing_mail_path(outgoing_mail) %></td>
+    <td><%= link_to "Remove", outgoing_mail, method: :delete, data: { confirm: "Are you sure?" } %></td>
+  </tr>
 <% end %>
-</ul>
+</table>
+ 
+<br>
+ 
+<%= link_to "New book", new_outgoing_mail_path %>
